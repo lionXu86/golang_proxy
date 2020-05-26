@@ -29,7 +29,6 @@ func demo() {
 	time.Sleep(time.Second * 2)
 
 	data := os.Args[1]
-	// data := make([]byte, 65536)
 	conn.Write([]byte(data))
 
 	time.Sleep(time.Second * 5)
